@@ -23,3 +23,8 @@ def print_char_dict(text):
 
 def sort_dictionary():
     sorted_dict = print_char_dict.sort()
+    alpha_dict = {}
+    for item in sorted_dict:
+        if item.isalpha() == True:
+            alpha_dict.append(item)
+    print(alpha_dict)

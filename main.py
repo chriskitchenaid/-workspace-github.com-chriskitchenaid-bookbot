@@ -1,4 +1,4 @@
-from stats import print_word_count, print_char_dict
+from stats import print_word_count, print_char_dict, sort_dictionary
 
 def get_book_text(file): 
     with open(file) as f:
@@ -9,5 +9,6 @@ def main():
     text = get_book_text("books/frankenstein.txt")
     print_word_count(text)
     print_char_dict(text)
+    sort_dictionary()
 
 main()
